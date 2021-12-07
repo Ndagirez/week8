@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!--if statements and if else-->
+        <p id="one"></p>
+        <script>
+            var mark=50;
+            if (mark>=70){
+                document.getElementById("one").innerHTML="well done ,you passed"
+
+            }
+            else{
+                document.getElementById("one").innerHTML= "sorry ,you failed"
+            }
+        </script>
+
+        <!--if ....elif-->
+        <p id="two"></p>
+        <script>
+            var mark=50;
+            if (mark>=70){
+                document.getElementById("two").innerHTML="well done ,you passed"
+
+            }
+            else if(mark=50){
+                document.getElementById("two").innerHTML= "your average "
+            }
+            else{
+                document.getElementById("two").innerHTML= "you failed"
+            }
+        </script>
+        <p id="three"></p>
+        <script>
+            
+            var day;
+            switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break; 
+            case  6:
+                day = "Saturday";
+            }
+            document.getElementById("three").innerHTML = "Today is " + day;
+            
+        </script>
+        <p id="four"></p>
+        <script>
+            switch(new Date().getDay()){
+                case 0:
+                    text="today is thursday"
+                break;
+                case 1:
+                    text= "today is monday"
+                    break;
+                default:
+                    text="tommorow is wednesday"
+            }
+            document.getElementById("four").innerHTML=text
+        </script>
+
+
+
+
+    </body>
+</html>

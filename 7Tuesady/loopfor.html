@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <!--for loop-->
+        <p id="one"></p>
+        <script>
+            var fruits = ["mango","apple","pineapple"];
+            var i = 0;
+            var len=fruits.length;
+            var text = "";
+            for(;i<len;){
+                text+=fruits[i] + "<br>";
+                i++;
+                document.getElementById("one").innerHTML=text;
+            }
+        </script>
+        <!--looping in objects -->
+        <p id="two"></p>
+        <script>
+             var text="";
+            var student = {name:"mariam",age:"23", gender:"female"}
+           
+            var x;
+            for (x in student){
+                text+=student[x] + " "
+            }
+            document.getElementById("two").innerHTML=text;
+        </script>
+        <!--for/ of-->
+        <p id="three"></p>
+        <script>
+            var names = ["tom","pat","tat","rat"]
+            var m;
+            for (m of names){
+                document.write(m + "<br>");
+            }
+        </script>
+    </body>
+</html>
